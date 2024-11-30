@@ -1,0 +1,9 @@
+services:
+  web:
+    build: ./web
+    tty: true
+    volumes:
+      - ./core:/app
+    ports:
+      - 80:80
+    restart: always
